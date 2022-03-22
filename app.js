@@ -1,5 +1,3 @@
-console.log('Hello World')
-
 const canvas = document.querySelector('canvas')
 const context = canvas.getContext('2d')
 
@@ -7,7 +5,6 @@ canvas.width = window.innerWidth
 canvas.height = window.innerHeight
 
 let x = 500
-
 
 function gameLoop() {
     // x += 6
@@ -19,8 +16,8 @@ function gameLoop() {
     context.fillStyle = '#8cbe87'
     context.beginPath()
     context.moveTo(x, 90)
-    context.lineTo(x-100, 90-30)
-    context.lineTo(x-100, 90+60)
+    context.lineTo(x - 100, 90 - 30)
+    context.lineTo(x - 100, 90 + 30)
     context.fill()
     requestAnimationFrame(gameLoop)
 }
